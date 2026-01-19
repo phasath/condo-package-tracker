@@ -3,7 +3,7 @@ const createAdminIfNotExists = require("./bootstrap/createAdmin");
 
 const PORT = process.env.PORT || 3000;
 
-const app = express();
+const app = require("./app");
 
 async function startServer() {
   await createAdminIfNotExists();
@@ -14,5 +14,3 @@ async function startServer() {
 }
 
 startServer();
-
-module.exports = app;
