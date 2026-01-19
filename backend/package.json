@@ -2,7 +2,7 @@
   "name": "backend",
   "version": "1.0.0",
   "scripts": {
-    "dev": "node src/server.js"
+    "start": "node src/start.js"
   },
   "dependencies": {
     "@prisma/client": "^5.7.0",
