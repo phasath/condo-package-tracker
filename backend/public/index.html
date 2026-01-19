@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Encomendas</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header><h1>📦 Encomendas</h1></header>
+
+<section id="login">
+  <input id="email" placeholder="Email">
+  <input id="password" type="password" placeholder="Senha">
+  <button onclick="login()">Entrar</button>
+</section>
+
+<section id="app" class="hidden">
+  <nav>
+    <button onclick="tab('PENDING')" class="active">Pendentes</button>
+    <button onclick="tab('DELIVERED')">Entregues</button>
+  </nav>
+
+  <section id="filters">
+    <input id="filterBlock" placeholder="Bloco">
+    <input id="filterApartment" placeholder="Apto">
+    <input id="filterName" placeholder="Morador">
+    <button onclick="load()">Buscar</button>
+  </section>
+
+  <section id="list"></section>
+</section>
+
+<script src="https://unpkg.com/html5-qrcode"></script>
+<script src="/main.js"></script>
+</body>
+</html>

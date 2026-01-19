@@ -1,0 +1,10 @@
+body { margin:0; font-family:system-ui; background:#f1f3f5; }
+header { background:#0d6efd; color:#fff; padding:16px; text-align:center; }
+.hidden { display:none; }
+nav { display:flex; }
+nav button { flex:1; padding:14px; border:none; }
+nav button.active { background:#0d6efd; color:#fff; }
+#filters { padding:12px; display:grid; grid-template-columns:1fr 1fr; gap:8px; }
+#filters button { grid-column:span 2; }
+.card { background:#fff; margin:10px; padding:14px; border-radius:12px; }
+.card button { width:100%; margin-top:10px; background:#0d6efd; color:#fff; border:none; padding:12px; }
